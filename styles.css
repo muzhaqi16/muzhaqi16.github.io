@@ -172,6 +172,10 @@ li {
         align-self: start;
     }
 
+    #nav-menu {
+        text-align: center;
+    }
+
     .outer-circle {
         left: 0;
     }
@@ -201,8 +205,8 @@ li {
         font-size: var(--small);
     }
 
-    .right-side {
-        /* justify-content: space-around; */
+    .inner-circle img {
+        width: 150px;
     }
 
     .welcome-hero {
