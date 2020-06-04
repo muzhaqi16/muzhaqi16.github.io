@@ -199,11 +199,11 @@ i.icon {
 
 /* Portfolio */
 
-.portfolio {
+#portfolio {
   text-align: center;
   margin: 50px;
 }
-.portfolio h2 {
+#portfolio h2 {
   font-size: var(--large);
 }
 .projects {
@@ -213,7 +213,7 @@ i.icon {
 }
 .project-card {
   display: flex;
-  flex: 1 1 500px;
+  flex: 1 1 525px;
   border-radius: 10px;
   overflow: hidden;
   flex-wrap: wrap;
@@ -242,6 +242,12 @@ div.two {
 }
 div.three {
   background-image: url("./images/ecalendar.png");
+}
+div.four {
+  background-image: url("./images/calculator.png");
+}
+div.five {
+  background-image: url("./images/markdown.png");
 }
 .project-details {
   color: var(--secondary-color);
