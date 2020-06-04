@@ -62,7 +62,8 @@ li {
   font-size: var(--large);
   color: var(--secondary-color);
 }
-
+.subtitle {
+}
 .subtitle p {
   font-size: var(--normal);
   text-transform: uppercase;
@@ -91,8 +92,11 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
+#hello {
+  font-size: var(--large);
+}
 .intro h1 {
   font-size: var(--x-large);
   text-transform: uppercase;
@@ -100,6 +104,9 @@ li {
 
 .diff-color {
   color: var(--main-color);
+}
+.block {
+  display: block;
 }
 
 .outer-circle {
@@ -162,7 +169,13 @@ li {
 .fa {
   padding-bottom: 10px;
 }
-
+/* ABOUT */
+#about-me {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
 /* Qualities Section */
 
 .qualities {
@@ -343,6 +356,9 @@ div.five {
     font-size: 5.5rem;
   }
 
+  .subtitle {
+    align-self: flex-end;
+  }
   .social-links p {
     margin-bottom: 0;
   }
@@ -354,6 +370,11 @@ div.five {
 
 /* screen less than 980px */
 @media only screen and (max-width: 480px) {
+  .title,
+  .subtitle {
+    display: none;
+    visibility: hidden;
+  }
   #nav-menu li {
     font-size: var(--small);
   }
@@ -364,6 +385,9 @@ div.five {
 
   .welcome-hero {
     flex-direction: column;
+  }
+  .intro {
+    justify-content: space-evenly;
   }
   .intro h1 {
     font-size: var(--large);
