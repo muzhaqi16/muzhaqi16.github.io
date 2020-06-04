@@ -27,6 +27,7 @@ li {
 #nav-menu li {
   display: inline-block;
   font-size: var(--normal);
+  margin-bottom: 20px;
 }
 
 .menu-item {
@@ -44,7 +45,7 @@ li {
 .main-container {
   display: flex;
   width: 100%;
-  min-height: 50vh;
+  min-height: 65vh;
   background-color: var(--main-color);
 }
 
@@ -142,6 +143,7 @@ li {
   flex-direction: column;
   padding-right: 10px;
   color: var(--main-color);
+  align-items: baseline;
 }
 
 .social-links p {
@@ -201,7 +203,7 @@ i.icon {
 
 #portfolio {
   text-align: center;
-  margin: 50px;
+  margin: 50px 0;
 }
 #portfolio h2 {
   font-size: var(--large);
@@ -281,7 +283,8 @@ div.five {
   justify-content: space-between;
 }
 /* FOOTER */
-.footer {
+
+#footer {
   background-color: var(--main-color);
   color: var(--secondary-color);
   min-height: 100px;
@@ -290,8 +293,14 @@ div.five {
   justify-content: space-around;
   align-items: center;
 }
-.footer h2 {
+#footer ul {
+  text-align: center;
+}
+#footer h2 {
   font-size: var(--medium);
+}
+#copyright {
+  text-align: center;
 }
 .footer-menu li {
   display: inline;
@@ -356,7 +365,12 @@ div.five {
   .welcome-hero {
     flex-direction: column;
   }
-
+  .intro h1 {
+    font-size: var(--large);
+  }
+  .intro p {
+    font-size: var(--normal);
+  }
   .social-links {
     flex-direction: row;
   }
@@ -364,9 +378,19 @@ div.five {
   .social-links p {
     writing-mode: horizontal-tb;
     text-orientation: mixed;
+    font-size: var(--normal);
   }
 
   .social-links ul li {
     display: inline-block;
+    font-size: var(--normal);
+  }
+  /* FOOTER */
+
+  #footer {
+    flex-direction: column;
+  }
+  #footer ul {
+    margin: 10px 0;
   }
 }
