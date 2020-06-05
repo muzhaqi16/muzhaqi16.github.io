@@ -377,6 +377,9 @@ div.five {
 
 /* screen less than 980px */
 @media only screen and (max-width: 480px) {
+  .left-side {
+    padding: 20px 0;
+  }
   .title,
   .subtitle {
     display: none;
