@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Open+Sans:wght@300;400&display=swap");
 :root {
   --main-color: #754ef9;
   --secondary-color: #ffffff;
@@ -7,11 +8,14 @@
   --normal: 16pt;
   --small: 12pt;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 li {
@@ -22,6 +26,7 @@ li {
   text-align: right;
   padding-top: 20px;
   padding-right: 20px;
+  font-weight: 200;
 }
 
 #nav-menu li {
@@ -61,13 +66,13 @@ li {
 .title h2 {
   font-size: var(--large);
   color: var(--secondary-color);
-}
-.subtitle {
+  font-family: "Dancing Script", cursive;
 }
 .subtitle p {
   font-size: var(--normal);
   text-transform: uppercase;
   color: var(--secondary-color);
+  font-family: "Dancing Script", cursive;
 }
 
 .right-side {
@@ -93,9 +98,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-#hello {
-  font-size: var(--large);
+  font-family: "Dancing Script", cursive;
 }
 .intro h1 {
   font-size: var(--x-large);
@@ -151,6 +154,7 @@ li {
   padding-right: 10px;
   color: var(--main-color);
   align-items: baseline;
+  letter-spacing: 3px;
 }
 
 .social-links p {
@@ -342,6 +346,7 @@ div.five {
 
   #nav-menu {
     text-align: center;
+    font-weight: 300;
   }
 
   .outer-circle {
@@ -351,7 +356,9 @@ div.five {
   .inner-circle img {
     width: 250px;
   }
-
+  .italic {
+    font-style: italic;
+  }
   .intro h1 {
     font-size: 5.5rem;
   }
