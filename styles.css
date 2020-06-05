@@ -180,6 +180,9 @@ li {
   flex-direction: column;
   margin: 50px 0;
 }
+#about-me h1 {
+  font-size: var(--large);
+}
 /* Qualities Section */
 
 .qualities {
