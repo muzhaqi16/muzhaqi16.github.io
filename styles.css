@@ -331,6 +331,9 @@ div.five {
   padding: 5px;
   font-size: 25px;
 }
+.footer-social li a {
+  color: white;
+}
 #copyright {
   font-size: var(--small);
 }
