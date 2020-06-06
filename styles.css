@@ -345,8 +345,13 @@ div.five {
 
   .title {
     align-self: start;
+    padding-left: 20px;
+    padding-top: 10px;
   }
-
+  .subtitle {
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
   #nav-menu {
     text-align: center;
     font-weight: 300;
