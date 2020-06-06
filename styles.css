@@ -380,18 +380,32 @@ div.five {
 
 /* screen less than 980px */
 @media only screen and (max-width: 480px) {
-  .left-side {
-    padding: 20px 0;
-  }
   .title,
   .subtitle {
     display: none;
     visibility: hidden;
   }
+  .main-container {
+    min-height: 50vh;
+  }
+  .right-side nav {
+    position: absolute;
+    top: 0;
+  }
+  .right-side nav {
+    width: 100%;
+  }
   #nav-menu li {
     font-size: var(--small);
   }
-
+  .menu-item {
+    color: var(--secondary-color);
+    padding: 0 10px;
+  }
+  .menu-item:hover {
+    color: black;
+    background-color: var(--secondary-color);
+  }
   .inner-circle img {
     width: 150px;
   }
