@@ -153,7 +153,6 @@ li {
   flex-direction: column;
   padding-right: 10px;
   color: var(--main-color);
-  align-items: baseline;
   letter-spacing: 3px;
 }
 
@@ -346,7 +345,6 @@ div.five {
   .title {
     align-self: start;
     padding-left: 20px;
-    padding-top: 10px;
   }
   .subtitle {
     padding-right: 20px;
@@ -357,6 +355,9 @@ div.five {
     font-weight: 300;
   }
 
+  .welcome-hero {
+    padding: 10px 0;
+  }
   .outer-circle {
     left: 0;
   }
@@ -392,6 +393,9 @@ div.five {
   }
   .main-container {
     min-height: 50vh;
+  }
+  .left-side {
+    padding: 65px 0 20px;
   }
   .right-side nav {
     position: absolute;
@@ -429,6 +433,7 @@ div.five {
   }
   .social-links {
     flex-direction: row;
+    align-items: baseline;
   }
 
   .social-links p {
