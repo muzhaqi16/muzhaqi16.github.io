@@ -1,5 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- What I Love
+    
+1. the double circle animation is great. It's quick, and doesn't steal from the page. 
+2. the project card layout idea, it will take some true finessing to make the thumbnail of the project look good in all sizes, but the idea is awesome
+3. the layout of the about me cards is also very nice 
+4. The header area once it breaks down and only has the picture and a couple words on it
+5. I love how you implemented the percentage bars; VERY simple solution, which is awesome. (thank you for not bringing in an external library for that!)
+
+What May Need Some More Love
+
+1. the header in full screen mode is very busy. There's a lot there, theres the animation, then multidirectional text... 
+2. when the header breaks down, the text moves to what almost acts as a second header, this is an interesting choice that could work if the visual is sorted out.  Also, you've got padding on the right hand side of the page nav once the header breaks down which causes it to be off-center with the picture (that is distracting for me)
+3. The bottom nav (for the page, not the external links) links don't work
+4. Linking the project cards with the deployed apps would be awesome! -->
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +30,7 @@
             <div class="main-container">
                 <div class="left-side">
                     <div class="title">
-                        <h2>Hello</h2>
+                        <h2>Portfolio</h2>
                     </div>
                     <div class="outer-circle">
                         <div class="inner-circle">
@@ -24,7 +38,7 @@
                         </div>
                     </div>
                     <div class="subtitle">
-                        <p>from Philly</p>
+                        <p>Made with <i class="fa fa-heart"></i> in Philly</p>
                     </div>
                 </div>
                 <div class="right-side">
@@ -40,9 +54,10 @@
                     </nav>
                     <div class="welcome-hero">
                         <div class="intro">
+                            <h2>Hello,</h2>
                             <h1>I<span class="diff-color">'</span>M <span class="diff-color block">Tani</span>
                             </h1>
-                            <p>Full Stack Web Developer</p>
+                            <p> a Full Stack Web Developer</p>
                         </div>
                         <div class="social-links">
                             <p>Follow Me On &nbsp; : &nbsp;</p>
@@ -62,51 +77,79 @@
             </div>
         </section>
         <section id="about-me">
-            <h1>About Me</h1>
-            <h3>Web & APP</h3>
+            <div class="section-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="header">
+                <h1 id="about-header">About Me</h1>
+            </div>
+            <div class="main">
+                <p class="paragraph">Since when I was first shown what you can do with code more than 10 years ago I
+                    haven't stopped
+                    exploring and learning what you can build with code.
+                </p>
+                <p class="paragraph">
+                    The ability and the power that the code gives me, is what makes me want to learn more and help with
+                    my skills. I also love to travel and explore the world and try to incorporate real world into code.
+                </p>
+                <p class="paragraph">
+                    I have traveled to over 20 countries so far and built about as many projects.</p>
+            </div>
         </section>
         <section class="qualities">
-            <div class="box">
-                <header>
-                    <p><i class="fa fa-globe icon"></i></p>
-                </header>
-                <main>
-                    <h2>Git Version Control</h2>
-                    <p>All i want to have client satisfaction & this is my aim</p>
-                </main>
-                <footer>
-                    <button class="learn-more">Learn More</button>
-                </footer>
+            <div class="header">
+                <h1>Qualities</h1>
             </div>
-            <div class="box">
-                <header>
-                    <p><i class="fa fa-address-book icon"></i></i></p>
-                </header>
-                <main>
-                    <h2>Problem Solving Skills</h2>
-                    <p>All i want to have client satisfaction & this is my aim</p>
-                </main>
-                <footer>
-                    <button class="learn-more">Learn More</button>
-                </footer>
+            <div class="main">
+                <div class="box">
+                    <header>
+                        <p><i class="fa fa-globe icon"></i></p>
+                    </header>
+                    <main>
+                        <h2>Git Version Control</h2>
+                        <p>All i want to have client satisfaction & this is my aim</p>
+                    </main>
+                    <footer>
+                        <button class="learn-more">Learn More</button>
+                    </footer>
+                </div>
+                <div class="box">
+                    <header>
+                        <p><i class="fa fa-address-book icon"></i></i></p>
+                    </header>
+                    <main>
+                        <h2>Problem Solving Skills</h2>
+                        <p>All i want to have client satisfaction & this is my aim</p>
+                    </main>
+                    <footer>
+                        <button class="learn-more">Learn More</button>
+                    </footer>
+                </div>
+                <div class="box">
+                    <header>
+                        <p><i class="fa fa-calendar icon"></i></p>
+                    </header>
+                    <main>
+                        <h2>Responsive design</h2>
+                        <p>All i want to have client satisfaction & this is my aim</p>
+                    </main>
+                    <footer>
+                        <button class="learn-more">Learn More</button>
+                    </footer>
+                </div>
             </div>
-            <div class="box">
-                <header>
-                    <p><i class="fa fa-calendar icon"></i></p>
-                </header>
-                <main>
-                    <h2>Responsive design</h2>
-                    <p>All i want to have client satisfaction & this is my aim</p>
-                </main>
-                <footer>
-                    <button class="learn-more">Learn More</button>
-                </footer>
-            </div>
+
         </section>
         <section id="portfolio">
-            <h2>My Portfolio</h2>
-            <h3>Web & APP</h3>
-            <div class="projects">
+            <div class="header">
+                <h1>My Portfolio</h1>
+            </div>
+            <div class="main">
                 <div class="project-card">
                     <div class="project-info  one card">
                     </div>
