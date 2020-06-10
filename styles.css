@@ -202,7 +202,7 @@ li {
   display: flex;
   text-align: center;
   flex-direction: column;
-  margin: 50px 0;
+  margin: 60px 0;
 }
 
 
@@ -454,8 +454,8 @@ div.five {
 
   #about-header {
     position: relative;
-    top: -125px;
-    left: -120px;
+    top: calc(-15vh);
+    left: calc(-15%);
     color: white;
     height: 0;
   }
@@ -466,6 +466,7 @@ div.five {
   }
 
   /* https://www.shapedivider.app */
+
   .section-divider {
     width: 100%;
     overflow: hidden;
@@ -571,6 +572,10 @@ div.five {
   .section-divider {
     display: none;
     visibility: hidden;
+  }
+
+  #about-me {
+    margin-top: 0;
   }
 
   #about-header {
