@@ -49,7 +49,7 @@ a {
 .menu-item {
   text-decoration: none;
   border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   text-transform: uppercase;
 }
 
@@ -338,6 +338,7 @@ div.two {
 
 div.three {
   background-image: url("./images/ecalendar.png");
+  background-position: inherit;
 }
 
 div.four {
@@ -346,11 +347,13 @@ div.four {
 
 div.five {
   background-image: url("./images/markdown.png");
+  background-position: top;
 }
 
 .project-details {
   color: var(--secondary-color);
   background: linear-gradient(to bottom, #626d82 0%, #343d4d 100%);
+  text-align: center;
 }
 
 .technologies {
@@ -388,8 +391,32 @@ div.five {
   width: 95%;
 }
 
+.w90 {
+  width: 90%;
+}
+
+.w70 {
+  width: 70%;
+}
+
 .w80 {
   width: 80%;
+}
+
+.w40 {
+  width: 40%;
+}
+
+.w30 {
+  width: 30%;
+}
+
+.w20 {
+  width: 20%;
+}
+
+.w10 {
+  width: 10%;
 }
 
 .technologies>.details {
