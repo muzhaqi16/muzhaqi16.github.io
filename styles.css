@@ -359,6 +359,16 @@ div.five {
   padding: 5px 0;
 }
 
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  color: white;
+  font-size: var(--medium);
+}
+
 .progress-bar {
   background-color: #f1f1f1 !important;
   height: 20px;
@@ -608,7 +618,7 @@ div.five {
 
   .social-links ul li {
     display: inline-block;
-    font-size: var(--normal);
+    font-size: 20pt;
   }
 
   .header {
