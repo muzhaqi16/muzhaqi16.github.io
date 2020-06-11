@@ -20,12 +20,12 @@ What May Need Some More Love
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         type="text/css" />
 </head>
 
 <body>
-    <main>
+    <main id="home">
         <section class="welcome-screen">
             <div class="main-container">
                 <div class="left-side">
@@ -63,13 +63,13 @@ What May Need Some More Love
                             <p>Follow Me On &nbsp; : &nbsp;</p>
 
                             <ul>
-                                <li><a href="https://github.com/muzhaqi16" target="_blank"><i class="fa fa-github"
+                                <li><a href="https://github.com/muzhaqi16" target="_blank"><i class="fab fa-github"
                                             aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.linkedin.com/in/artan-muzhaqi/" target="_blank"><i
-                                            class="fa fa-linkedin" aria-hidden="true"></a></i></li>
+                                            class="fab fa-linkedin" aria-hidden="true"></a></i></li>
                                 <li><a
                                         href="mailto:artanmuzhaqi@gmail.com?subject=Contact from personal portfolio&body=Hi, I saw your website and I am contacting you regarding"><i
-                                            class="fa fa-envelope" aria-hidden="true"></i></a> </li>
+                                            class="far fa-envelope" aria-hidden="true"></i></a> </li>
                             </ul>
                         </div>
                     </div>
@@ -89,58 +89,79 @@ What May Need Some More Love
                 <h1 id="about-header">About Me</h1>
             </div>
             <div class="main">
-                <p class="paragraph">Since when I was first shown what you can do with code more than 10 years ago I
-                    haven't stopped
-                    exploring and learning what you can build with code.
+                <p class="paragraph">I have been passionate about programming for as long as I can remember.
                 </p>
                 <p class="paragraph">
-                    The ability and the power that the code gives me, is what makes me want to learn more and help with
-                    my skills. I also love to travel and explore the world and try to incorporate real world into code.
+                    About two years ago, I quit my current job and decided to enroll in Thinkful's coding Bootcamp.
                 </p>
                 <p class="paragraph">
-                    I have traveled to over 20 countries so far and built about as many projects.</p>
+                    Since then, I haven't stopped exploring and learning what to build with code. The ability and the
+                    power that the code gives me make me want always to learn more.
+                </p>
+                <p class="paragraph">Aside from coding, I also love to travel, explore the world, meet new people, and
+                    try to plan solutions to real-world problems with code. I have gone to over 20 countries so far and
+                    built about as many projects.</p>
             </div>
         </section>
-        <section class="qualities">
+        <section id="qualities">
             <div class="header">
                 <h1>My Qualities</h1>
             </div>
             <div class="main">
                 <div class="box">
                     <header>
+                        <p><i class="fa fa-code icon"></i></p>
+                    </header>
+                    <main class="flex column space-evenly full-height">
+                        <h2>Having the Skillset</h2>
+                        <p> I am always learning new technologies because I know that it's important to branch out so
+                            that when the time comes, and I have to work with a technology that I am not familiar with,
+                            I'll at least know what's involved and not be intimidated by it.
+                        </p>
+                    </main>
+                    <!-- <footer>
+                        <button class="learn-more">Learn More</button>
+                    </footer> -->
+                </div>
+                <div class="box">
+                    <header>
                         <p><i class="fa fa-globe icon"></i></p>
                     </header>
-                    <main>
-                        <h2>Git Version Control</h2>
-                        <p>All i want to have client satisfaction & this is my aim</p>
+                    <main class="flex column space-evenly full-height">
+                        <h2>Driven to Continue Learning</h2>
+                        <p>I am always looking to expand my knowledge consistently to keep up with the industry.</p>
                     </main>
-                    <footer>
+                    <!-- <footer>
                         <button class="learn-more">Learn More</button>
-                    </footer>
+                    </footer> -->
                 </div>
                 <div class="box">
                     <header>
-                        <p><i class="fa fa-address-book icon"></i></i></p>
+                        <p><i class="fa fa-brain icon"></i></p>
                     </header>
-                    <main>
-                        <h2>Problem Solving Skills</h2>
-                        <p>All i want to have client satisfaction & this is my aim</p>
+                    <main class="flex column space-evenly full-height">
+                        <h2>Problem Solving Mindset</h2>
+                        <p>Even though my brain doesn't think in code yet, keeping a broad understanding of how the
+                            whole code works, gives me a lot more insight into how each little part connects to
+                            implement the entire application.</p>
                     </main>
-                    <footer>
+                    <!-- <footer>
                         <button class="learn-more">Learn More</button>
-                    </footer>
+                    </footer> -->
                 </div>
                 <div class="box">
                     <header>
-                        <p><i class="fa fa-calendar icon"></i></p>
+                        <p><i class="fa fa-comments icon"></i></p>
                     </header>
-                    <main>
-                        <h2>Responsive design</h2>
-                        <p>All i want to have client satisfaction & this is my aim</p>
+                    <main class="flex column space-evenly full-height">
+                        <h2>Excellent communication skills</h2>
+                        <p>As a web developer, it can be really easy to go silent, but communication with your team is
+                            essential. I always take time to communicate what I'm working on and report any obstacles
+                            that I might run into.</p>
                     </main>
-                    <footer>
+                    <!-- <footer>
                         <button class="learn-more">Learn More</button>
-                    </footer>
+                    </footer> -->
                 </div>
             </div>
 
@@ -343,22 +364,24 @@ What May Need Some More Love
         <section id="footer">
             <ul id="copyright">
                 <li>
-                    <h2>Portfolio <span id="copyright"></h2>
+                    <h2><a href="#home">Portfolio</a><span id="copyright"></h2>
                 </li>
                 <li>&copy; 2020 Artan Muzhaqi</span></li>
             </ul>
             <ul class="footer-menu">
-                <li>About me</li>
-                <li>Portfolio</li>
-                <li>Resume</li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#qualities">Qualities</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
             <ul class="footer-social">
-                <li><a href="https://muzhaqi.com" target="_blank"><i class="fa fa-firefox" aria-hidden="true"></i></a>
+                <li><a href="./Resume_Artan_Muzhaqi.pdf" title="Resume" target="_blank"><i
+                            class="fas fa-file-pdf"></i></a></li>
+                <li><a href="https://github.com/muzhaqi16" target="_blank"><i class="fab fa-github"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/artan-muzhaqi/" target="_blank"><i class="fab fa-linkedin"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://muzhaqi.com" target="_blank"><i class="fab fa-firefox" aria-hidden="true"></i></a>
                 </li>
-                <li><a href="https://github.com/muzhaqi16" target="_blank"><i class="fa fa-github"
-                            aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/artan-muzhaqi/" target="_blank"><i class="fa fa-linkedin"
-                            aria-hidden="true"></i></a></li>
             </ul>
         </section>
     </main>
