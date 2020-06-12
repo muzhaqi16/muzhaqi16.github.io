@@ -120,6 +120,14 @@ a {
   font-family: "Dancing Script", cursive;
 }
 
+.large {
+  font-size: var(--large);
+}
+
+.align-left {
+  text-align: left;
+}
+
 .intro h1 {
   font-size: var(--x-large);
   text-transform: uppercase;
@@ -233,7 +241,7 @@ a {
 
 }
 
-div.main {
+.main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -242,6 +250,9 @@ div.main {
   margin-bottom: 20px;
 }
 
+.justify-left {
+  justify-content: left;
+}
 
 main p {
   color: black;
