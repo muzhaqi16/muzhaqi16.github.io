@@ -353,24 +353,24 @@ i.icon {
 }
 
 div.one {
-  background-image: url("./images/drum-machine.png");
+  background-image: url("./images/screenshots/drum-machine.png");
 }
 
 div.two {
-  background-image: url("./images/pomodoro.png");
+  background-image: url("./images/screenshots/pomodoro.png");
 }
 
 div.three {
-  background-image: url("./images/ecalendar.png");
+  background-image: url("./images/screenshots/ecalendar.png");
   background-position: inherit;
 }
 
 div.four {
-  background-image: url("./images/calculator.png");
+  background-image: url("./images/screenshots/calculator.png");
 }
 
 div.five {
-  background-image: url("./images/markdown.png");
+  background-image: url("./images/screenshots/markdown.png");
   background-position: top;
 }
 
