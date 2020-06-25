@@ -251,7 +251,6 @@ a {
   width: 100%;
   background-color: var(--main-color);
   color: white;
-
 }
 
 .main {
@@ -294,7 +293,6 @@ main p {
 .full-height {
   height: 100%;
 }
-
 
 .box {
   display: flex;
@@ -443,7 +441,7 @@ div.five {
   width: 10%;
 }
 
-.technologies>.details {
+.technologies > .details {
   display: flex;
   justify-content: space-between;
 }
@@ -505,7 +503,6 @@ div.five {
   visibility: hidden;
 }
 
-
 /* first breakpoint */
 /* screen less than 980px */
 @media only screen and (max-width: 980px) {
@@ -560,10 +557,9 @@ div.five {
     padding-bottom: 0;
   }
 
-
   #about-header {
     position: relative;
-    top: calc(-15vh);
+    top: -140px;
     left: calc(-15%);
     color: white;
     height: 0;
@@ -600,7 +596,7 @@ div.five {
   }
 
   .section-divider .shape-fill {
-    fill: #754EF9;
+    fill: #754ef9;
   }
 
   /* https://www.shapedivider.app */
@@ -608,7 +604,6 @@ div.five {
 
 /* screen less than 980px */
 @media only screen and (max-width: 480px) {
-
   .title,
   .subtitle {
     display: none;
@@ -690,8 +685,6 @@ div.five {
     display: none;
     visibility: hidden;
   }
-
-
 
   #about-info {
     flex-direction: column;
