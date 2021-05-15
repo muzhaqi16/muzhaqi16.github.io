@@ -1,0 +1,93 @@
+/* first breakpoint */
+/* screen less than 980px */
+
+.main-container {
+  flex-direction: column;
+}
+
+.title {
+  align-self: start;
+  padding-left: 20px;
+}
+
+.subtitle {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#nav-menu {
+  text-align: center;
+  font-weight: 300;
+}
+
+.welcome-hero {
+  padding: 10px 0;
+}
+
+.outer-circle {
+  left: 0;
+}
+
+.inner-circle img {
+  width: 250px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.intro h1 {
+  font-size: 5.5rem;
+}
+
+.subtitle {
+  align-self: flex-end;
+}
+
+.social-links p {
+  margin-bottom: 0;
+}
+
+.fa {
+  padding-bottom: 0;
+}
+
+#about-header {
+  position: relative;
+  top: -140px;
+  left: calc(-15%);
+  color: white;
+  height: 0;
+}
+
+#about-info img {
+  display: inline;
+}
+
+#about-info div {
+  display: inline;
+}
+
+.section-divider {
+  display: block;
+  visibility: visible;
+}
+
+.section-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.section-divider svg {
+  position: relative;
+  display: block;
+  width: calc(135% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+}
+
+.section-divider .shape-fill {
+  fill: #754ef9;
+}

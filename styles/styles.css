@@ -351,24 +351,24 @@ i.icon {
 }
 
 div.one {
-  background-image: url("./images/screenshots/drum-machine.jpg");
+  background-image: url("../images/screenshots/drum-machine.jpg");
 }
 
 div.two {
-  background-image: url("./images/screenshots/pomodoro.png");
+  background-image: url("../images/screenshots/pomodoro.png");
 }
 
 div.three {
-  background-image: url("./images/screenshots/ecalendar.png");
+  background-image: url("../images/screenshots/ecalendar.png");
   background-position: inherit;
 }
 
 div.four {
-  background-image: url("./images/screenshots/calculator.png");
+  background-image: url("../images/screenshots/calculator.png");
 }
 
 div.five {
-  background-image: url("./images/screenshots/markdown.png");
+  background-image: url("../images/screenshots/markdown.png");
   background-position: top;
 }
 
@@ -501,219 +501,4 @@ div.five {
 .section-divider {
   display: none;
   visibility: hidden;
-}
-
-/* first breakpoint */
-/* screen less than 980px */
-@media only screen and (max-width: 980px) {
-  .main-container {
-    flex-direction: column;
-  }
-
-  .title {
-    align-self: start;
-    padding-left: 20px;
-  }
-
-  .subtitle {
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
-
-  #nav-menu {
-    text-align: center;
-    font-weight: 300;
-  }
-
-  .welcome-hero {
-    padding: 10px 0;
-  }
-
-  .outer-circle {
-    left: 0;
-  }
-
-  .inner-circle img {
-    width: 250px;
-  }
-
-  .italic {
-    font-style: italic;
-  }
-
-  .intro h1 {
-    font-size: 5.5rem;
-  }
-
-  .subtitle {
-    align-self: flex-end;
-  }
-
-  .social-links p {
-    margin-bottom: 0;
-  }
-
-  .fa {
-    padding-bottom: 0;
-  }
-
-  #about-header {
-    position: relative;
-    top: -140px;
-    left: calc(-15%);
-    color: white;
-    height: 0;
-  }
-
-  #about-info img {
-    display: inline;
-  }
-
-  #about-info div {
-    display: inline;
-  }
-
-  .section-divider {
-    display: block;
-    visibility: visible;
-  }
-
-  /* https://www.shapedivider.app */
-
-  .section-divider {
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .section-divider svg {
-    position: relative;
-    display: block;
-    width: calc(135% + 1.3px);
-    height: 150px;
-    transform: rotateY(180deg);
-  }
-
-  .section-divider .shape-fill {
-    fill: #754ef9;
-  }
-
-  /* https://www.shapedivider.app */
-}
-
-/* screen less than 980px */
-@media only screen and (max-width: 480px) {
-  .title,
-  .subtitle {
-    display: none;
-    visibility: hidden;
-  }
-
-  .main-container {
-    min-height: 50vh;
-  }
-
-  .left-side {
-    padding: 100px 0 20px;
-  }
-
-  .right-side nav {
-    position: absolute;
-    top: 0;
-  }
-
-  .right-side nav {
-    width: 100%;
-  }
-
-  #nav-menu li {
-    font-size: var(--small);
-  }
-
-  .menu-item {
-    color: var(--secondary-color);
-    padding: 0 10px;
-  }
-
-  .menu-item:hover {
-    color: black;
-    background-color: var(--secondary-color);
-  }
-
-  .inner-circle img {
-    width: 150px;
-  }
-
-  .welcome-hero {
-    flex-direction: column;
-  }
-
-  .intro {
-    justify-content: space-evenly;
-  }
-
-  .intro h1 {
-    font-size: var(--large);
-  }
-
-  .intro p {
-    font-size: var(--normal);
-  }
-
-  .social-links {
-    flex-direction: row;
-    align-items: baseline;
-  }
-
-  .social-links p {
-    writing-mode: horizontal-tb;
-    text-orientation: mixed;
-    font-size: var(--normal);
-  }
-
-  .social-links ul li {
-    display: inline-block;
-    font-size: 20pt;
-  }
-
-  .header {
-    font-size: var(--normal);
-  }
-
-  .section-divider {
-    display: none;
-    visibility: hidden;
-  }
-
-  #about-info {
-    flex-direction: column;
-  }
-
-  #about-header {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: auto;
-    color: black;
-  }
-
-  #about-info img {
-    display: none;
-    visibility: hidden;
-  }
-
-  #about-info div {
-    margin-bottom: 100px;
-  }
-
-  /* FOOTER */
-
-  #footer {
-    flex-direction: column;
-  }
-
-  #footer ul {
-    margin: 10px 0;
-  }
 }
