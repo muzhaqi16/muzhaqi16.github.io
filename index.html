@@ -4,18 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172010195-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-172010195-1');
-    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
@@ -26,8 +15,7 @@
     <title>Artan Muzhaqi - Personal Portfolio</title>
     <meta name="description" content="I am Artan Muzhaqi, a full stack web developer from Philadelphia" />
     <link rel="stylesheet" href="./styles.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
-        type="text/css" />
+
 </head>
 
 <body>
@@ -69,12 +57,14 @@
                             <p>Follow Me On &nbsp; : &nbsp;</p>
 
                             <ul>
-                                <li><a title="Github" href="https://github.com/muzhaqi16" target="_blank" rel="noopener noreferrer"><i
-                                            class="fab fa-github diff-color" aria-hidden="true"></i></a></li>
-                                <li><a title="LinkedIn" href="https://www.linkedin.com/in/artan-muzhaqi/" target="_blank"
-                                        rel="noopener noreferrer"><i class="fab fa-linkedin diff-color"
+                                <li><a title="Github" href="https://github.com/muzhaqi16" target="_blank"
+                                        rel="noopener noreferrer"><i class="fab fa-github diff-color"
+                                            aria-hidden="true"></i></a></li>
+                                <li><a title="LinkedIn" href="https://www.linkedin.com/in/artan-muzhaqi/"
+                                        target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin diff-color"
                                             aria-hidden="true"></a></i></li>
-                                <li><a title="Email me" href="mailto:artanmuzhaqi@gmail.com?subject=Contact from personal portfolio&body=Hi, I saw your website and I am contacting you regarding"
+                                <li><a title="Email me"
+                                        href="mailto:artanmuzhaqi@gmail.com?subject=Contact from personal portfolio&body=Hi, I saw your website and I am contacting you regarding"
                                         rel="noopener noreferrer"><i class="far fa-envelope diff-color"
                                             aria-hidden="true"></i></a> </li>
                             </ul>
@@ -455,23 +445,51 @@
                             class="fas fa-file-pdf"></i></a></li>
                 <li><a href="https://github.com/muzhaqi16" target="_blank" title="GitHub" rel="noopener noreferrer"><i
                             class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/artan-muzhaqi/" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i
-                            class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://muzhaqi.com" target="_blank" title="Personal Website" rel="noopener noreferrer"><i class="fab fa-firefox"
-                            aria-hidden="true"></i></a>
+                <li><a href="https://www.linkedin.com/in/artan-muzhaqi/" title="LinkedIn" target="_blank"
+                        rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://muzhaqi.com" target="_blank" title="Personal Website" rel="noopener noreferrer"><i
+                            class="fab fa-firefox" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </section>
     </main>
 
-
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script>
-
         const year = document.getElementById('year');
         year.innerText = new Date().getFullYear();
+        // to defer the loading of stylesheets
+        // just add it right before the </body> tag
+        // and before any javaScript file inclusion (for performance)  
+        function loadStyleSheet(src) {
+            if (document.createStyleSheet) document.createStyleSheet(src);
+            else {
+                var stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            }
+        }
+        window.onload = () => {
+            loadStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css')
+        }
     </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172010195-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-172010195-1');
+    </script>
+
 </body>
 
 </html>
