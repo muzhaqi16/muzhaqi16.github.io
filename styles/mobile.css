@@ -81,6 +81,10 @@
   display: none;
   visibility: hidden;
 }
+/* ABOUT */
+#about-me {
+  margin: 0px 0 100px 0;
+}
 
 #about-info {
   flex-direction: column;

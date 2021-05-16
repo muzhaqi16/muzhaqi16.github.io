@@ -59,6 +59,9 @@
   color: white;
   height: 0;
 }
+#about-me {
+  margin: 0px 0 100px 0;
+}
 
 #about-info img {
   display: inline;
