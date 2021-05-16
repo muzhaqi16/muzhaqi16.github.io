@@ -95,7 +95,7 @@
 }
 
 #about-info img {
-  display: none;
+  display: none !important;
   visibility: hidden;
 }
 
