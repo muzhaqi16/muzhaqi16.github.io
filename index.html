@@ -472,7 +472,15 @@
             }
         }
         window.onload = () => {
-            loadStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css')
+            loadStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-172010195-1');
         }
     </script>
     <!-- Place this tag in your head or just before your close body tag. -->
@@ -481,14 +489,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-172010195-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-172010195-1');
     </script>
 
 </body>
