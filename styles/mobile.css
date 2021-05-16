@@ -38,7 +38,7 @@
 }
 
 .inner-circle img {
-  width: 150px;
+  width: 150px !important;
 }
 
 .welcome-hero {
