@@ -1,16 +1,13 @@
 {
-    "name": "",
-    "short_name": "",
-    "icons": [{
-        "src": "/images/fav/android-chrome-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png"
-    }, {
-        "src": "/images/fav/android-chrome-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-    }],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+  "name": "Artan Muzhaqi",
+  "short_name": "Tani",
+  "description": "Portfolio of Artan (Tani) Muzhaqi, full-stack software engineer.",
+  "start_url": "/",
+  "icons": [
+    { "src": "/images/fav/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/fav/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#f58234",
+  "background_color": "#faf8f4",
+  "display": "browser"
 }

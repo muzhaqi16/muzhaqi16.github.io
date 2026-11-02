@@ -1,497 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:; style-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Artan Muzhaqi | Full-Stack Software Engineer</title>
+  <meta name="description" content="Full-stack software engineer with 6 years of experience in React Native, React, TypeScript, Node.js and GraphQL. Built and shipped Sous Chef on iOS and Android.">
+  <link rel="canonical" href="https://muzhaqi.com/">
 
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#faf8f4">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#15120f">
+  <meta name="color-scheme" content="light dark">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://muzhaqi.com/">
+  <meta property="og:title" content="Artan (Tani) Muzhaqi | Full-Stack Software Engineer">
+  <meta property="og:description" content="Built and shipped Sous Chef on iOS and Android. React Native, React, TypeScript, Node.js, GraphQL, PostgreSQL, AWS.">
+  <meta property="og:image" content="https://muzhaqi.com/images/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Artan (Tani) Muzhaqi, Full-Stack Software Engineer, next to three screens of the Sous Chef app">
+  <meta name="twitter:card" content="summary_large_image">
 
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <title>Artan Muzhaqi - Personal Portfolio</title>
-    <meta name="description" content="I am Artan Muzhaqi, a full stack web developer from Philadelphia" />
-    <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
-    <link rel="stylesheet" media='only screen and (max-width: 480px)' href="./styles/mobile.css" />
-    <link rel="stylesheet" media='only screen and (max-width: 980px)' href="./styles/tablet.css" />
+  <link rel="preload" href="/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/dm-mono-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles/main.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://muzhaqi.com/#person",
+        "name": "Artan Muzhaqi",
+        "alternateName": "Tani Muzhaqi",
+        "url": "https://muzhaqi.com/",
+        "jobTitle": "Full-Stack Software Engineer",
+        "sameAs": [
+          "https://www.linkedin.com/in/artan-muzhaqi/",
+          "https://github.com/muzhaqi16"
+        ],
+        "knowsAbout": ["React Native", "React", "TypeScript", "Node.js", "GraphQL", "PostgreSQL", "AWS"]
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Sous Chef: Pantry & Recipes",
+        "url": "https://souschef.dev/",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "LifestyleApplication",
+        "author": { "@id": "https://muzhaqi.com/#person" }
+      }
+    ]
+  }
+  </script>
 </head>
 
-<body>
-    <main id="home">
-        <section class="welcome-screen">
-            <div class="main-container">
-                <div class="left-side">
-                    <div class="title">
-                        <h2>Portfolio</h2>
-                    </div>
-                    <div class="outer-circle">
-                        <div class="inner-circle">
-                            <img src="images/profile_picture.jpg" alt="artan muzhaqi smiling" />
-                        </div>
-                    </div>
-                    <div class="subtitle">
-                        <p>Made with <i class="fa fa-heart"></i> in Philly</p>
-                    </div>
-                </div>
-                <div class="right-side">
-                    <nav>
-                        <ul id="nav-menu">
-                            <li><a href="#about-me" class="menu-item" rel="noopener noreferrer">About Me</a></li>
-                            <li><a href="#portfolio" class="menu-item" rel="noopener noreferrer">Portfolio</a></li>
-                            <li><a href="./Artan Muzhaqi Resume.pdf"
-                                    title="This will download a pdf version of my resume" target="_blank"
-                                    rel="noopener noreferrer" class="menu-item">Download CV</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="welcome-hero">
-                        <div class="intro">
-                            <h2>Hello,</h2>
-                            <h1>I<span class="diff-color">'</span>M <span class="diff-color block">Tani</span>
-                            </h1>
-                            <p> a Full Stack Web Developer</p>
-                        </div>
-                        <div class="social-links">
-                            <p>Follow Me On &nbsp; : &nbsp;</p>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
 
-                            <ul>
-                                <li><a title="Github" href="https://github.com/muzhaqi16" target="_blank"
-                                        rel="noopener noreferrer"><i class="fab fa-github diff-color"
-                                            aria-hidden="true"></i></a></li>
-                                <li><a title="LinkedIn" href="https://www.linkedin.com/in/artan-muzhaqi/"
-                                        target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin diff-color"
-                                            aria-hidden="true"></a></i></li>
-                                <li><a title="Email me"
-                                        href="mailto:artanmuzhaqi@gmail.com?subject=Contact from personal portfolio&body=Hi, I saw your website and I am contacting you regarding"
-                                        rel="noopener noreferrer"><i class="far fa-envelope diff-color"
-                                            aria-hidden="true"></i></a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about-me">
-            <div class="section-divider">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="header">
-                <h1 id="about-header">About Me</h1>
-            </div>
-            <div id="about-info">
-                <img src="./images/tall_profile.jpg" alt="Standing profile photo" />
-                <div class="main align-left">
-                    <p class="paragraph"><span class="large">I'</span>ve been passionate about programming for as long
-                        as
-                        I can
-                        remember.
-                        About two years ago, I quit my job and decided to enroll in <a href="https://www.thinkful.com/"
-                            rel="noopener noreferrer" target="_blank"><span class="diff-color"> Thinkful's
-                            </span> </a> coding
-                        Bootcamp to pursue my passion as a web developer.
-                    </p>
-                    <p class="paragraph">
-                        Since then, I haven't stopped exploring and learning what to build with code. The ability and
-                        the
-                        power that the code gives me make me want always to learn more.
-                    </p>
-                    <p class="paragraph">Aside from coding, I also <a href="https://www.instagram.com/amuzhaqi/"
-                            target="_blank" rel="noopener noreferrer"><span class="diff-color">love to
-                                travel</span></a>, explore
-                        the world, meet new people, and
-                        try to plan solutions to real-world problems with code. I have gone to over 20 countries so far
-                        and
-                        built about as many projects.</p>
+  <header class="site-head wrap">
+    <a class="brand" href="#top" aria-label="Artan Muzhaqi, back to top">
+      <img src="/images/mark.webp" width="96" height="96" alt="">
+      <span>Artan Muzhaqi</span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#sous-chef">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://cv.muzhaqi.com/amuzhaqi/artan-muzhaqi">Résumé</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                    <!-- Place this tag where you want the button to render. -->
-                    <a class="github-button" href="https://github.com/muzhaqi16" data-size="large"
-                        data-show-count="true" aria-label="Follow @muzhaqi16 on GitHub" rel="noopener noreferrer">Follow
-                        @muzhaqi16</a>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="name">
+      <p class="eyebrow">Full-Stack Software Engineer <span aria-hidden="true">/</span> Greater Pittsburgh Region</p>
+      <h1 id="name">Artan <span class="nick">(Tani)</span><br>Muzhaqi</h1>
+      <div class="lede">
+        <p>Full-stack software engineer with 6 years of experience building mobile, web and cloud applications with React Native, React, TypeScript, Node.js and GraphQL.</p>
+        <p>I work on Node.js applications and AWS infrastructure at Comcast. On my own time I designed, built and shipped Sous Chef, a React Native app live on the App Store and Google Play.</p>
+      </div>
+      <ul class="links">
+        <li><a class="ext" href="https://github.com/muzhaqi16" rel="me">GitHub</a></li>
+        <li><a class="ext" href="https://www.linkedin.com/in/artan-muzhaqi/" rel="me">LinkedIn</a></li>
+        <li><a href="mailto:artanmuzhaqi@gmail.com">artanmuzhaqi@gmail.com</a></li>
+      </ul>
+    </section>
 
-                </div>
-            </div>
+    <section class="project" id="sous-chef" aria-labelledby="project-title">
+      <div class="wrap project-grid">
+        <div class="project-copy">
+          <p class="eyebrow">Featured project <span aria-hidden="true">/</span> Mar 2025 to present</p>
+          <div class="project-title">
+            <picture>
+              <source srcset="/images/sous-chef/icon.avif" type="image/avif">
+              <img src="/images/sous-chef/icon.webp" width="144" height="144" alt="" loading="lazy" decoding="async">
+            </picture>
+            <h2 id="project-title">Sous Chef: Pantry &amp; Recipes</h2>
+          </div>
+          <p>A production mobile app on the App Store and Google Play, plus the API, admin dashboard, website and infrastructure behind it. It helps households track food, plan meals and share shopping lists, online or offline.</p>
+          <p>I own it end to end: product, UI, engineering, releases and operations.</p>
+          <ul class="actions">
+            <li><a class="button" href="https://apps.apple.com/us/app/sous-chef-pantry-recipes/id6758162765">App Store</a></li>
+            <li><a class="button" href="https://play.google.com/store/apps/details?id=dev.souschef.app">Google Play</a></li>
+            <li><a class="button ghost" href="https://souschef.dev/">souschef.dev</a></li>
+            <li><a class="button ghost" href="https://github.com/muzhaqi16/sous-chef-rn">Source</a></li>
+          </ul>
+        </div>
 
-        </section>
-        <section id="qualities">
-            <div class="header">
-                <h1>My Qualities</h1>
-            </div>
-            <div class="main">
-                <div class="box">
-                    <header>
-                        <p><i class="fa fa-code icon"></i></p>
-                    </header>
-                    <main class="flex column space-evenly full-height">
-                        <h2>Having the Skillset</h2>
-                        <p> I am always learning new technologies because I know that it's important to branch out so
-                            that when the time comes, and I have to work with a technology that I am not familiar with,
-                            I'll at least know what's involved and not be intimidated by it.
-                        </p>
-                    </main>
-                    <!-- <footer>
-                        <button class="learn-more">Learn More</button>
-                    </footer> -->
-                </div>
-                <div class="box">
-                    <header>
-                        <p><i class="fa fa-globe icon"></i></p>
-                    </header>
-                    <main class="flex column space-evenly full-height">
-                        <h2>Driven to Continue Learning</h2>
-                        <p>I am always looking to expand my knowledge consistently to keep up with the industry. Being a
-                            good developer means that you aren't afraid to learn a language that you aren't familiar
-                            with and monitor how technologies and languages change to stay current.</p>
-                    </main>
-                    <!-- <footer>
-                        <button class="learn-more">Learn More</button>
-                    </footer> -->
-                </div>
-                <div class="box">
-                    <header>
-                        <p><i class="fa fa-brain icon"></i></p>
-                    </header>
-                    <main class="flex column space-evenly full-height">
-                        <h2>Problem Solving Mindset</h2>
-                        <p>Even though my brain doesn't think in code yet, keeping a broad understanding of how the
-                            whole code works, gives me a lot more insight into how each little part connects to
-                            implement the entire application.</p>
-                    </main>
-                    <!-- <footer>
-                        <button class="learn-more">Learn More</button>
-                    </footer> -->
-                </div>
-                <div class="box">
-                    <header>
-                        <p><i class="fa fa-comments icon"></i></p>
-                    </header>
-                    <main class="flex column space-evenly full-height">
-                        <h2>Excellent communication skills</h2>
-                        <p>As a web developer, it can be really easy to go silent, but communication with your team is
-                            essential. I always take time to communicate what I'm working on and report any obstacles
-                            that I might run into.</p>
-                    </main>
-                    <!-- <footer>
-                        <button class="learn-more">Learn More</button>
-                    </footer> -->
-                </div>
-            </div>
+        <ul class="phones" aria-label="Sous Chef screens">
+          <li class="phone">
+            <picture>
+              <source srcset="/images/sous-chef/today-dark-300.avif 300w, /images/sous-chef/today-dark.avif 480w" sizes="(min-width: 58rem) 215px, 30vw" type="image/avif" media="(prefers-color-scheme: dark)">
+              <source srcset="/images/sous-chef/today-dark-300.webp 300w, /images/sous-chef/today-dark.webp 480w" sizes="(min-width: 58rem) 215px, 30vw" type="image/webp" media="(prefers-color-scheme: dark)">
+              <source srcset="/images/sous-chef/today-300.avif 300w, /images/sous-chef/today.avif 480w" sizes="(min-width: 58rem) 215px, 30vw" type="image/avif">
+              <img src="/images/sous-chef/today.webp" srcset="/images/sous-chef/today-300.webp 300w, /images/sous-chef/today.webp 480w" sizes="(min-width: 58rem) 215px, 30vw" width="480" height="1043" fetchpriority="high" decoding="async" alt="Today screen with expiring items, the day's meals and recipes based on the pantry">
+            </picture>
+          </li>
+          <li class="phone">
+            <picture>
+              <source srcset="/images/sous-chef/receipt-300.avif 300w, /images/sous-chef/receipt.avif 480w" sizes="(min-width: 58rem) 215px, 30vw" type="image/avif">
+              <img src="/images/sous-chef/receipt.webp" srcset="/images/sous-chef/receipt-300.webp 300w, /images/sous-chef/receipt.webp 480w" sizes="(min-width: 58rem) 215px, 30vw" width="480" height="1043" decoding="async" alt="Receipt review screen listing scanned items and prices to add to the pantry">
+            </picture>
+          </li>
+          <li class="phone">
+            <picture>
+              <source srcset="/images/sous-chef/pantry-300.avif 300w, /images/sous-chef/pantry.avif 480w" sizes="(min-width: 58rem) 215px, 30vw" type="image/avif">
+              <img src="/images/sous-chef/pantry.webp" srcset="/images/sous-chef/pantry-300.webp 300w, /images/sous-chef/pantry.webp 480w" sizes="(min-width: 58rem) 215px, 30vw" width="480" height="1043" decoding="async" alt="Pantry screen listing food by what expires next">
+            </picture>
+          </li>
+        </ul>
 
-        </section>
-        <section id="portfolio">
-            <div class="header">
-                <h1>My Portfolio</h1>
-            </div>
-            <div class="main">
-                <div class="project-card">
-                    <div class="project-info three card">
-                    </div>
-                    <div class="project-details card">
-                        <h1>eCalendar</h1>
-                        <p>Advanced calendar application with appoinment scheduler and manager</p>
-                        <h3>Technologies Used</h2>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress"></div>
-                                </div>
-                                <div class="details">
-                                    <span>React.js</span><span>100%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress"></div>
-                                </div>
-                                <div class="details">
-                                    <span>HTML</span><span>100%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w95"></div>
-                                </div>
-                                <div class="details">
-                                    <span>CSS</span><span>95%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w80"></div>
-                                </div>
-                                <div class="details">
-                                    <span>JavaScript</span><span>80%</span>
-                                </div>
-                            </div>
-                            <div class="links">
-                                <a href="https://github.com/muzhaqi16/eCalendar" target="_blank"
-                                    rel="noopener noreferrer" title="Github Repository Link"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://e-calendar.now.sh" target="_blank" rel="noopener noreferrer"
-                                    title="Deployed Application Link"><i class="fab fa-firefox-browser"></i></a>
-                            </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-info one card">
-                    </div>
-                    <div class="project-details card">
-                        <h1>Drum Machine</h1>
-                        <p>Drum machine created with react that lets you play different sounds through your keyboard.
-                        </p>
-                        Technologies Used
-                        <div class="technologies">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                            <div class="details">
-                                <span>HTML</span><span>100%</span>
-                            </div>
-                        </div>
-                        <div class="technologies">
-                            <div class="progress-bar">
-                                <div class="progress w95"></div>
-                            </div>
-                            <div class="details">
-                                <span>CSS</span><span>95%</span>
-                            </div>
-                        </div>
-                        <div class="technologies">
-                            <div class="progress-bar">
-                                <div class="progress w80"></div>
-                            </div>
-                            <div class="details">
-                                <span>JavaScript</span><span>80%</span>
-                            </div>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/muzhaqi16/drum-machine" target="_blank"
-                                rel="noopener noreferrer" title="Github Repository Link"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="https://drum-machine-one.now.sh" target="_blank" rel="noopener noreferrer"
-                                title="Deployed Application Link"><i class="fab fa-firefox-browser"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-info two card">
-                    </div>
-                    <div class="project-details card">
-                        <h1>Pomodoro Clock</h1>
-                        <p>React.js pomodoro clock to keep track of your work and break sessions.</p>
-                        Technologies Used
-                        <div class="technologies">
-                            <div class="progress-bar">
-                                <div class="progress"></div>
-                            </div>
-                            <div class="details">
-                                <span>HTML</span><span>100%</span>
-                            </div>
-                        </div>
-                        <div class="technologies">
-                            <div class="progress-bar">
-                                <div class="progress w95"></div>
-                            </div>
-                            <div class="details">
-                                <span>CSS</span><span>95%</span>
-                            </div>
-                        </div>
-                        <div class="technologies">
-                            <div class="progress-bar">
-                                <div class="progress w80"></div>
-                            </div>
-                            <div class="details">
-                                <span>JavaScript</span><span>70%</span>
-                            </div>
-                        </div>
-                        <div class="technologies">
-                            <div class="progress-bar">
-                                <div class="progress w80"></div>
-                            </div>
-                            <div class="details">
-                                <span>React</span><span>90%</span>
-                            </div>
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/muzhaqi16/pomodoro-clock" target="_blank"
-                                rel="noopener noreferrer" title="Github Repository Link"><i
-                                    class="fab fa-github"></i></a>
-                            <a href="https://pomodoro-clock-two.now.sh" target="_blank" rel="noopener noreferrer"
-                                title="Deployed Application Link"><i class="fab fa-firefox-browser"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <ul class="features" aria-label="What Sous Chef does">
+          <li>Pantry, fridge and freezer tracking</li>
+          <li>Expiring and low-stock alerts</li>
+          <li>Recipes matched to what you have</li>
+          <li>Meal plans that fill a shopping list</li>
+          <li>Shared household shopping lists</li>
+          <li>Barcode and receipt scanning</li>
+        </ul>
+      </div>
+    </section>
 
-                <div class="project-card">
-                    <div class="project-info four card">
-                    </div>
-                    <div class="project-details card">
-                        <h1>Calculator</h1>
-                        <p>Javascript calculator built with HTML,CSS, Javascript, JQuery and Bootstrap.</p>
-                        <h3>Technologies Used</h2>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w20"></div>
-                                </div>
-                                <div class="details">
-                                    <span>HTML</span><span>20%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w10"></div>
-                                </div>
-                                <div class="details">
-                                    <span>CSS</span><span>10%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w30"></div>
-                                </div>
-                                <div class="details">
-                                    <span>Bootstrap</span><span>30%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w40"></div>
-                                </div>
-                                <div class="details">
-                                    <span>jQuery</span><span>40%</span>
-                                </div>
-                            </div>
-                            <div class="links">
-                                <a href="https://github.com/muzhaqi16/javascript-calculator" target="_blank"
-                                    rel="noopener noreferrer" title="Github Repository Link"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://muzhaqi16.github.io/javascript-calculator" target="_blank"
-                                    rel="noopener noreferrer" title="Deployed Application Link"><i
-                                        class="fab fa-firefox-browser"></i></a>
-                            </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-info five card">
-                    </div>
-                    <div class="project-details card">
-                        <h1>Markdwon Editor</h1>
-                        <p>React Markdown Editor created using Marked.js library</p>
-                        <h3>Technologies Used</h2>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress"></div>
-                                </div>
-                                <div class="details">
-                                    <span>React.js</span><span>100%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress"></div>
-                                </div>
-                                <div class="details">
-                                    <span>HTML</span><span>100%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w95"></div>
-                                </div>
-                                <div class="details">
-                                    <span>CSS</span><span>95%</span>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div class="progress-bar">
-                                    <div class="progress w80"></div>
-                                </div>
-                                <div class="details">
-                                    <span>JavaScript</span><span>80%</span>
-                                </div>
-                            </div>
-                            <div class="links">
-                                <a href="https://github.com/muzhaqi16/markdown-editor" target="_blank"
-                                    rel="noopener noreferrer" title="Github Repository Link"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://react-markdown-editor.now.sh/" target="_blank"
-                                    rel="noopener noreferrer" title="Deployed Application Link"><i
-                                        class="fab fa-firefox-browser"></i></a>
-                            </div>
-                    </div>
-                </div>
+    <section class="built wrap" aria-labelledby="built-title">
+      <h2 id="built-title" class="section-title">How it's built</h2>
 
+      <div class="built-grid">
+        <div class="receipt-col">
+          <div class="receipt-shadow">
+            <div class="receipt">
+              <p class="receipt-head">Sous Chef</p>
+              <p class="receipt-sub">Counted from the code, Nov 2026</p>
+              <dl class="ledger">
+                <div><dt>Queries &amp; mutations</dt><dd>280+</dd></div>
+                <div><dt>Prisma models</dt><dd>116</dd></div>
+                <div><dt>Shared components</dt><dd>130+</dd></div>
+                <div><dt>Feature modules</dt><dd>14</dd></div>
+                <div><dt>Test files</dt><dd>2,000+</dd></div>
+                <div><dt>Languages</dt><dd>4</dd></div>
+              </dl>
+              <dl class="ledger total">
+                <div><dt>Compiler bailouts</dt><dd>0</dd></div>
+              </dl>
+              <p class="receipt-foot">Live on iOS and Android</p>
+              <div class="barcode" aria-hidden="true"></div>
             </div>
-        </section>
-        <section id="footer">
-            <ul id="copyright">
-                <li>
-                    <h2><a href="#home" rel="noopener noreferrer">Portfolio</a><span id="copyright"></h2>
-                </li>
-                <li>&copy; <span id="year"></span> Artan Muzhaqi</span></li>
+          </div>
+        </div>
+
+        <div class="notes">
+          <article>
+            <h3>Local-first writes</h3>
+            <p>A change shows up immediately as an optimistic layer, while the cache holds only what the server said. Writes are saved before they send and replay in order. Client-minted IDs and idempotency keys make a re-send safe, and a refused change is kept for the person to retry or discard. Live updates reach the household over WebSocket subscriptions.</p>
+          </article>
+          <article>
+            <h3>Receipts read on the phone first</h3>
+            <p>Swift and Kotlin native modules recognize the text on the device with Apple Vision and ML Kit, then a rules parser reads it. A reading that adds up stands. Anything else goes to the API, which parses receipts with LLMs and embeddings.</p>
+          </article>
+          <article>
+            <h3>A core that runs without React Native</h3>
+            <p>The data layer, state and domain logic load in Node with no React Native installed, and reach the device only through ports. A test holds that line, so the data layer can be exercised without a device.</p>
+          </article>
+          <article>
+            <h3>One design system</h3>
+            <p>130+ shared components on tokens for color, type, spacing and motion, with light and dark themes, Reanimated and Skia, FlashList, and four languages: English, Spanish, Italian and Albanian.</p>
+          </article>
+          <article>
+            <h3>Rules the tooling enforces</h3>
+            <p>Project rules live in custom ESLint rules and Jest tests, not a style guide. One gate keeps production code at zero React Compiler bailouts, and a rule that depends on a library's behavior cites the version and probe that verified it.</p>
+          </article>
+        </div>
+      </div>
+
+      <dl class="stack">
+        <div><dt>Mobile</dt><dd>React Native 0.86 (New Architecture), React 19, React Compiler, TypeScript, Apollo Client 4, GraphQL Codegen, Swift, Kotlin</dd></div>
+        <div><dt>Backend</dt><dd>Node.js, Apollo Server, Express, PostgreSQL, Prisma, pgvector, Redis, BullMQ</dd></div>
+        <div><dt>Web</dt><dd>Next.js admin dashboard, AWS SES email service</dd></div>
+        <div><dt>Quality</dt><dd>Jest, Detox, custom ESLint rules, CodeQL</dd></div>
+        <div><dt>Delivery</dt><dd>GitHub Actions, Xcode Cloud, spec-driven planning with OpenSpec, AI-assisted development with Claude Code, App Store and Google Play releases</dd></div>
+      </dl>
+    </section>
+
+    <section class="experience wrap" id="experience" aria-labelledby="experience-title">
+      <h2 id="experience-title" class="section-title">Experience</h2>
+
+      <ol class="jobs">
+        <li>
+          <p class="when">Aug 2022 to present</p>
+          <div>
+            <h3>Node.js Developer</h3>
+            <p class="where">Comcast, Contract <span aria-hidden="true">/</span> Philadelphia, PA, Remote</p>
+            <ul>
+              <li>Developed and maintained scalable Node.js applications, enhancing the user experience and ensuring application reliability.</li>
+              <li>Managed infrastructure with Terraform and AWS, focusing on scalability, security and efficient deployment processes.</li>
+              <li>Automated continuous integration and deployment pipelines using Concourse CI, ensuring smooth and consistent rollouts.</li>
+              <li>Administered and optimized Neo4j graph databases, improving query performance and overall system efficiency.</li>
+              <li>Conducted troubleshooting and debugging across the application stack, maintaining seamless operation and quick issue resolution.</li>
             </ul>
-            <ul class="footer-menu">
-                <li><a href="#about-me" rel="noopener noreferrer">About me</a></li>
-                <li><a href="#qualities" rel="noopener noreferrer">Qualities</a></li>
-                <li><a href="#portfolio" rel="noopener noreferrer">Portfolio</a></li>
+          </div>
+        </li>
+        <li>
+          <p class="when">Jun 2021 to Apr 2022</p>
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="where">Capgemini, Contract <span aria-hidden="true">/</span> Philadelphia, PA, Remote</p>
+            <ul>
+              <li>Developed full-stack solutions for web applications, utilizing JavaScript, TypeScript, React, Redux and Angular.</li>
+              <li>Worked on both front-end and back-end development, ensuring a cohesive user experience and robust functionality.</li>
+              <li>Participated in code reviews, testing and deployment processes, contributing to the overall quality and performance of the applications.</li>
+              <li>Collaborated with cross-functional teams to design and implement features that aligned with business objectives.</li>
             </ul>
-            <ul class="footer-social">
-                <li><a href="./Resume_Artan_Muzhaqi.pdf" title="Resume" target="_blank" rel="noopener noreferrer"><i
-                            class="fas fa-file-pdf"></i></a></li>
-                <li><a href="https://github.com/muzhaqi16" target="_blank" title="GitHub" rel="noopener noreferrer"><i
-                            class="fab fa-github" aria-hidden="true"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/artan-muzhaqi/" title="LinkedIn" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                <li><a href="https://muzhaqi.com" target="_blank" title="Personal Website" rel="noopener noreferrer"><i
-                            class="fab fa-firefox" aria-hidden="true"></i></a>
-                </li>
+          </div>
+        </li>
+        <li>
+          <p class="when">Oct 2020 to Sep 2021</p>
+          <div>
+            <h3>Frontend Web Developer</h3>
+            <p class="where">Assist Digital, Full-time <span aria-hidden="true">/</span> Tirana, Albania, Remote</p>
+            <ul>
+              <li>Created and optimized user-facing features for web applications, focusing on performance and scalability.</li>
+              <li>Worked closely with backend developers to ensure seamless integration of APIs and data sources.</li>
+              <li>Developed reusable code and components, improving development efficiency and future scalability.</li>
             </ul>
-        </section>
-    </main>
+          </div>
+        </li>
+        <li>
+          <p class="when">Feb 2020 to Feb 2021</p>
+          <div>
+            <h3>Teaching Assistant, UPenn Coding Bootcamp</h3>
+            <p class="where">2U, Part-time <span aria-hidden="true">/</span> Philadelphia, PA</p>
+            <ul>
+              <li>Provided guidance and support to students in full-stack web development, covering technologies such as HTML, CSS, JavaScript, React.js and Node.js.</li>
+              <li>Assisted in debugging, code reviews and project implementation, fostering a deep understanding of web development best practices.</li>
+              <li>Also worked as a Learning Assistant, remotely, from Apr 2020 to Oct 2020.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
 
-    <script>
-        const year = document.getElementById('year');
-        year.innerText = new Date().getFullYear();
-        // to defer the loading of stylesheets
-        // just add it right before the </body> tag
-        // and before any javaScript file inclusion (for performance)  
-        function loadStyleSheet(src) {
-            if (document.createStyleSheet) document.createStyleSheet(src);
-            else {
-                var stylesheet = document.createElement('link');
-                stylesheet.href = src;
-                stylesheet.rel = 'stylesheet';
-                stylesheet.type = 'text/css';
-                document.getElementsByTagName('head')[0].appendChild(stylesheet);
-            }
-        }
-        window.onload = () => {
-            loadStyleSheet('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css');
-            window.dataLayer = window.dataLayer || [];
+    <section class="skills wrap" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">What I work with</h2>
+      <dl class="stack">
+        <div><dt>Mobile</dt><dd>React Native, iOS, Android, Swift and Kotlin native modules, Reanimated, offline-first sync</dd></div>
+        <div><dt>Front end</dt><dd>React, Next.js, TypeScript, Redux, Angular, design systems, internationalization</dd></div>
+        <div><dt>Back end</dt><dd>Node.js, Express, GraphQL, Apollo Server, Apollo Client, Prisma, WebSocket subscriptions</dd></div>
+        <div><dt>Data</dt><dd>PostgreSQL, pgvector, Redis, Neo4j, BullMQ</dd></div>
+        <div><dt>Cloud and DevOps</dt><dd>AWS, Terraform, Docker Swarm, Ansible, GitHub Actions, Grafana</dd></div>
+        <div><dt>AI</dt><dd>LLM integration, embeddings, vector search, AI-assisted development with Claude Code</dd></div>
+        <div><dt>Delivery</dt><dd>Roadmap planning, spec-driven development, code review, testing with Jest and Detox, App Store and Google Play releases</dd></div>
+      </dl>
+    </section>
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
+    <section class="credentials wrap" aria-label="Certifications and education">
+      <div>
+        <h2 class="section-title">Certifications</h2>
+        <dl class="ledger wide">
+          <div><dt>Graph Developer - Associate <small>Apollo GraphQL</small></dt><dd>May 2024</dd></div>
+          <div><dt>Neo4j Certified Professional <small>Neo4j</small></dt><dd>Mar 2023</dd></div>
+          <div><dt>Oracle Certified Associate, Java SE 8 Programmer <small>Oracle</small></dt><dd>Aug 2021</dd></div>
+          <div><dt>AWS Certified Developer – Associate <small>Amazon Web Services</small></dt><dd>Apr 2023, expired Apr 2026</dd></div>
+          <div><dt>HashiCorp Certified: Terraform Associate (003) <small>HashiCorp</small></dt><dd>May 2023, expired May 2025</dd></div>
+        </dl>
+      </div>
+      <div>
+        <h2 class="section-title">Education</h2>
+        <dl class="ledger wide">
+          <div><dt>Associate in Applied Science, Computer Information Systems - Information Tech <small>Community College of Philadelphia</small></dt><dd>2013 to 2023</dd></div>
+          <div><dt>Certificate, Engineering Flex <small>Chegg Skills, formerly Thinkful</small></dt><dd>Mar to Oct 2019</dd></div>
+        </dl>
+      </div>
+    </section>
 
-            gtag('config', 'UA-172010195-1');
-        }
-    </script>
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <section class="earlier wrap" aria-labelledby="earlier-title">
+      <h2 id="earlier-title" class="section-title">Earlier projects</h2>
+      <ul class="projects">
+        <li>
+          <a class="ext" href="https://github.com/muzhaqi16/2020-04-01-Interactive-Calculator">Restaurant Tip and Bill Splitter</a>
+          <p>Easy to use bill splitter and tip calculator.</p>
+          <time datetime="2020-04">Apr 2020</time>
+        </li>
+        <li>
+          <a class="ext" href="https://github.com/muzhaqi16/eCalendar">eCalendar</a>
+          <p>Advanced calendar for managing your appointments.</p>
+          <time datetime="2020-03">Mar 2020</time>
+        </li>
+        <li>
+          <a class="ext" href="https://github.com/muzhaqi16/meal-planner-react">Meal Planner</a>
+          <p>React and Node.js application with a PostgreSQL database for planning your weekly meals and keeping track of your recipes.</p>
+          <time datetime="2019-09">Sep 2019</time>
+        </li>
+        <li>
+          <a class="ext" href="https://github.com/muzhaqi16/sous-chef-client">Sous Chef, the first version</a>
+          <p>Tracks your grocery items, lets you create a shopping list and searches recipes based on what you already have in your kitchen.</p>
+          <time datetime="2019-08">Aug 2019</time>
+        </li>
+        <li>
+          <a class="ext" href="https://github.com/muzhaqi16/myLyrics-search-app">myLyrics</a>
+          <p>Uses the Musixmatch and YouTube APIs to search for and display a song's lyrics. Built with HTML, CSS, JavaScript and jQuery.</p>
+          <time datetime="2019-03">Mar 2019</time>
+        </li>
+      </ul>
+    </section>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=UA-172010195-1"></script>
-    <script>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <picture>
+          <source srcset="/images/portrait.avif" type="image/avif">
+          <img src="/images/portrait.webp" width="476" height="697" loading="lazy" decoding="async" alt="Portrait of Tani in a black T-shirt, arms crossed">
+        </picture>
+        <div class="about-copy">
+          <h2 id="about-title">About</h2>
+          <p>I've been passionate about programming for as long as I can remember. In 2019 I quit my job to enroll in Thinkful's coding bootcamp, and within a year I was helping teach the UPenn Coding Bootcamp.</p>
+          <p>The first Sous Chef was a small app from that bootcamp year. The one on the App Store today is the same idea, built properly.</p>
+          <p>Aside from coding, I <a href="https://www.instagram.com/amuzhaqi/">love to travel</a>, explore the world and meet new people. I've been to over 20 countries so far.</p>
+          <h2 class="contact-title">Get in touch</h2>
+          <p><a class="email" href="mailto:artanmuzhaqi@gmail.com">artanmuzhaqi@gmail.com</a></p>
+          <ul class="links">
+            <li><a class="ext" href="https://www.linkedin.com/in/artan-muzhaqi/" rel="me">LinkedIn</a></li>
+            <li><a class="ext" href="https://github.com/muzhaqi16" rel="me">GitHub</a></li>
+            <li><a class="ext" href="https://cv.muzhaqi.com/amuzhaqi/artan-muzhaqi">Résumé</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    </script>
-
+  <footer class="site-foot wrap">
+    <p>Artan Muzhaqi</p>
+    <p>Hand-written HTML and CSS. No JavaScript, no trackers.</p>
+  </footer>
 </body>
-
 </html>
